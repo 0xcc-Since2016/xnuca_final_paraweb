@@ -1,0 +1,21 @@
+CREATE DATABASE shop DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+use shop;
+CREATE TABLE IF NOT EXISTS `cargo`(
+   `cargo_id` INT,
+   `cargo_name` VARCHAR(100),
+   `cargo_attribute` BLOB,
+   `price` varchar(40),
+   PRIMARY KEY ( `cargo_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(0, "IPhoneX", "PsiPsiPsi", "$1600");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(1, "IPhoneXI", "Brilliant", "$2000");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(2, "MBP", "JUNK", "$2600");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(3, "LG Gram", "\x90\x90\x90\x90", "$200");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(4, "Lenovo", "Garbage", "$500");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(5, "Dell", "Normal", "$1700");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(6, "HP", "Fantasy", "$1600");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(7, "Alien", "Rich", "$25000");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(8, "ASUS", "What?", "$2400");
+insert into cargo (cargo_id, cargo_name, cargo_attribute, price) VALUES(9, "Surface", "Pretty", "$2600");
+
